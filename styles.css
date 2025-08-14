@@ -154,7 +154,13 @@ label{ color: var(--text); font-weight: 600; }
   .footer-container { flex-direction: column; }
 }
 
-.top-nav{ background:#2E4057; border-bottom:3px solid #2E4057; }
+.top-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background:#2E4057; 
+  border-bottom:3px solid #2E4057; 
+}
 .header-container{
   max-width:1100px;
   margin:0 auto;
