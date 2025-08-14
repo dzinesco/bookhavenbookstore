@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book Haven Bookstore - Home</title>
+  <meta name="description" content="Book Haven Bookstore - Discover curated books, magazines, and unique gifts from your neighborhood bookstore. Browse our collection and join our community of readers.">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="top-nav" role="banner">
+    <div class="header-container">
+      <img src="assets/logo.png" alt="Book Haven Bookstore Logo" class="logo">
+      <nav class="main-nav" role="navigation" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+
+  <main id="main">
+    <section class="hero home-hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <h1 id="hero-title" class="display">Discover Your Next Favorite Book</h1>
+          <p class="body-large">Curated reads, magazines, and gifts from your neighborhood bookstore.</p>
+          <a href="gallery.html" class="btn cta">Browse Now</a>
+        </div>
+        <div class="hero-art" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="features section" aria-labelledby="features-title">
+      <h2 id="features-title" class="title-large">Why Shop Book Haven</h2>
+      <div class="feature-grid">
+        <article class="card">
+          <h3 class="title">Staff Picks</h3>
+          <p class="body">Weekly recommendations from real booksellers.</p>
+        </article>
+        <article class="card">
+          <h3 class="title">Events & Signings</h3>
+          <p class="body">Author talks, clubs, and community gatherings.</p>
+        </article>
+        <article class="card">
+          <h3 class="title">Gifts & Stationery</h3>
+          <p class="body">Totes, journals, and stickers for book lovers.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="testimonials section" aria-labelledby="testimonials-title">
+      <h2 id="testimonials-title" class="title-large">What Readers Say</h2>
+      <blockquote class="testimonial body-large">“A cozy corner of the internet for book lovers.”</blockquote>
+    </section>
+
+    <div style="height: 40px;"></div>
+   
+  </main>
+
+  <footer role="contentinfo" style="background-color: #2E4057; padding: 40px 20px; border-top: 1px solid #C7B65E; color: white;">
+    <div class="footer-container" style="display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; gap: 20px;">
+      <div style="display: flex; flex-direction: column; gap: 20px;">
+        <h2 class="footer-title" style="font-weight: 700; font-size: 1.5rem; color: white;">Stay Updated</h2>
+        <div class="footer-subscribe" style="width: 100%; max-width: 400px;">
+          <form id="subscribeForm" class="subscribe" novalidate style="display: flex; gap: 10px;">
+            
+            <input id="subEmail" name="email" type="email" placeholder="you@example.com" required
+                   style="flex: 1; background-color: white; color: #2E4057; border: none; padding: 10px 15px; border-radius: 4px; font-size: 1rem;">
+            <button class="btn subscribe-btn" type="submit" 
+                    style="background-color: #EE583F; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-size: 1rem; cursor: pointer;">
+              Subscribe
+            </button>
+            <p id="subMsg" class="sub-msg" aria-live="polite" style="position: absolute; left: -9999px;"></p>
+          </form>
+        </div>
+        <div style="text-align: left;">
+          <p style="color: white;">© 2025 Book Haven Bookstore</p>
+        </div>
+      </div>
+      <div style="color: white; min-width: 220px;">
+        <h2 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 8px; color: white;">Hours of Operation:</h2>
+        <p style="color: white; margin: 0;">
+          Monday–Friday: 9 a.m. to 8 p.m.<br>
+          Saturday: 10 a.m. to 6 p.m.<br>
+          Sunday: 11 a.m. to 5 p.m.
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
