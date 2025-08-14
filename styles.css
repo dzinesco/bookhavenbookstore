@@ -277,7 +277,7 @@ form {
 /* Large phones */
 @media (min-width: 480px) {
   .grid { grid-template-columns: 1fr 1fr; }
-  .employee-grid { grid-template-columns: 1fr 1fr; }
+  .employee-grid { grid-template-columns: 1fr; }
   .home-hero h1 { font-size: 2rem; }
   .home-hero p { font-size: 1.1rem; }
   .header-container { flex-direction: row; text-align: left; }
@@ -305,6 +305,7 @@ form {
 /* Tablets */
 @media (min-width: 768px) {
   .grid { grid-template-columns: repeat(2, 1fr); }
+  .employee-grid { grid-template-columns: repeat(2, 1fr); }
   .contact-container { flex-direction: row; }
   .contact-form, .contact-info { flex: 1; }
   .feature-grid { grid-template-columns: repeat(2, 1fr); }
@@ -555,7 +556,7 @@ body {
 
 .employee-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
   margin-top: 2rem;
 }
