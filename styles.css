@@ -225,10 +225,6 @@ form {
   grid-template-columns: 1fr; 
   gap: 1rem;
 }
-.employee-grid {
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-}
 .header-container { 
   flex-direction: column; 
   gap: 1rem; 
@@ -559,8 +555,8 @@ body {
 
 .employee-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
   margin-top: 2rem;
 }
 
