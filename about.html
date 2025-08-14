@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Haven Bookstore - About Us</title>
+    <meta name="description" content="Meet the dedicated team at Book Haven Bookstore. Learn about our passionate booksellers and their commitment to helping you find your next great read.">
+    <meta name="theme-color" content="#2E4057">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="top-nav" role="banner">
+    <div class="header-container">
+      <img src="assets/logo.png" alt="Book Haven Bookstore Logo" class="logo" loading="eager">
+      <nav class="main-nav" role="navigation" aria-label="Primary">
+        <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section about-hero" aria-labelledby="about-title">
+      <h1 id="about-title" class="display">About Book Haven</h1>
+      <p class="body-large">Meet the passionate team behind your neighborhood bookstore.</p>
+    </section>
+
+    <section class="section employees" aria-labelledby="employees-title">
+      <h2 id="employees-title" class="title-large">Our Team</h2>
+      <div class="employee-grid">
+        <div class="employee-card">
+          <div class="employee-photo" aria-hidden="true">
+            <img src="https://via.placeholder.com/200x200/2E4057/FFFFFF?text=Photo" alt="Employee photo placeholder" loading="lazy">
+          </div>
+          <h3 class="employee-name title">Sarah Johnson</h3>
+          <p class="employee-role body">Store Manager</p>
+        </div>
+        
+        <div class="employee-card">
+          <div class="employee-photo" aria-hidden="true">
+            <img src="https://via.placeholder.com/200x200/2E4057/FFFFFF?text=Photo" alt="Employee photo placeholder" loading="lazy">
+          </div>
+          <h3 class="employee-name title">Michael Chen</h3>
+          <p class="employee-role body">Book Specialist</p>
+        </div>
+
+        <div class="employee-card">
+          <div class="employee-photo" aria-hidden="true">
+            <img src="https://via.placeholder.com/200x200/2E4057/FFFFFF?text=Photo" alt="Employee photo placeholder" loading="lazy">
+          </div>
+          <h3 class="employee-name title">Emma Rodriguez</h3>
+          <p class="employee-role body">Events Coordinator</p>
+        </div>
+
+        <div class="employee-card">
+          <div class="employee-photo" aria-hidden="true">
+            <img src="https://via.placeholder.com/200x200/2E4057/FFFFFF?text=Photo" alt="Employee photo placeholder" loading="lazy">
+          </div>
+          <h3 class="employee-name title">David Kim</h3>
+          <p class="employee-role body">Customer Service</p>
+        </div>
+
+        <div class="employee-card">
+          <div class="employee-photo" aria-hidden="true">
+            <img src="https://via.placeholder.com/200x200/2E4057/FFFFFF?text=Photo" alt="Employee photo placeholder" loading="lazy">
+          </div>
+          <h3 class="employee-name title">Lisa Thompson</h3>
+          <p class="employee-role body">Inventory Manager</p>
+        </div>
+
+        <div class="employee-card">
+          <div class="employee-photo" aria-hidden="true">
+            <img src="https://via.placeholder.com/200x200/2E4057/FFFFFF?text=Photo" alt="Employee photo placeholder" loading="lazy">
+          </div>
+          <h3 class="employee-name title">Alex Morgan</h3>
+          <p class="employee-role body">Book Buyer</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-section" aria-labelledby="cta-title">
+      <div class="cta-content">
+        <h2 id="cta-title" class="title-large">Ready to Discover Your Next Favorite Book?</h2>
+        <p class="body-large">Our knowledgeable team is here to help you find exactly what you're looking for.</p>
+        <div class="cta-buttons">
+          <a href="gallery.html" class="btn cta">Browse Our Collection</a>
+          <a href="contact.html" class="btn cta secondary">Get Recommendations</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo" style="background-color: #2E4057; padding: 40px 20px; border-top: 1px solid #C7B65E; color: white;">
+    <div class="footer-container" style="display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; gap: 20px;">
+      <div style="display: flex; flex-direction: column; gap: 20px;">
+        <h3 class="footer-title" style="font-weight: 700; font-size: 1.5rem; color: white;">Stay Updated</h3>
+        <div class="footer-subscribe" style="width: 100%; max-width: 400px;">
+          <form id="subscribeForm" class="subscribe" novalidate style="display: flex; gap: 10px;" role="form" aria-label="Newsletter subscription">
+            <label for="subEmail" class="visually-hidden">Email address for newsletter</label>
+            <input id="subEmail" name="email" type="email" placeholder="you@example.com" required
+                   aria-describedby="subMsg" 
+                   style="flex: 1; background-color: white; color: #2E4057; border: none; padding: 10px 15px; border-radius: 4px; font-size: 1rem;">
+            <button class="btn subscribe-btn" type="submit" 
+                    aria-describedby="subMsg"
+                    style="background-color: #EE583F; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-size: 1rem; cursor: pointer;">
+              Subscribe
+            </button>
+            <p id="subMsg" class="sub-msg" aria-live="polite" style="position: absolute; left: -9999px;"></p>
+          </form>
+        </div>
+        <div style="text-align: left;">
+          <p style="color: white;">© 2025 Book Haven Bookstore</p>
+        </div>
+      </div>
+      <div style="color: white; min-width: 220px;">
+        <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 8px; color: white;">Hours of Operation:</h3>
+        <p style="color: white; margin: 0;">
+          Monday–Friday: 9 a.m. to 8 p.m.<br>
+          Saturday: 10 a.m. to 6 p.m.<br>
+          Sunday: 11 a.m. to 5 p.m.
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
