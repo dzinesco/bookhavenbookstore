@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Book Haven Bookstore - Home</title>
   <meta name="description" content="Book Haven Bookstore - Discover curated books, magazines, and unique gifts from your neighborhood bookstore. Browse our collection and join our community of readers.">
+  <meta name="theme-color" content="#2E4057">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="format-detection" content="telephone=no">
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
@@ -14,8 +18,13 @@
 
   <header class="top-nav" role="banner">
     <div class="header-container">
-      <img src="assets/logo.png" alt="Book Haven Bookstore Logo" class="logo">
+      <img src="assets/logo.png" alt="Book Haven Bookstore Logo" class="logo" loading="eager">
       <nav class="main-nav" role="navigation" aria-label="Primary">
+        <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
         <ul class="nav-list">
           <li><a href="index.html" aria-current="page">Home</a></li>
           <li><a href="gallery.html">Gallery</a></li>
@@ -68,13 +77,15 @@
   <footer role="contentinfo" style="background-color: #2E4057; padding: 40px 20px; border-top: 1px solid #C7B65E; color: white;">
     <div class="footer-container" style="display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; gap: 20px;">
       <div style="display: flex; flex-direction: column; gap: 20px;">
-        <h2 class="footer-title" style="font-weight: 700; font-size: 1.5rem; color: white;">Stay Updated</h2>
+        <h3 class="footer-title" style="font-weight: 700; font-size: 1.5rem; color: white;">Stay Updated</h3>
         <div class="footer-subscribe" style="width: 100%; max-width: 400px;">
-          <form id="subscribeForm" class="subscribe" novalidate style="display: flex; gap: 10px;">
-            
+          <form id="subscribeForm" class="subscribe" novalidate style="display: flex; gap: 10px;" role="form" aria-label="Newsletter subscription">
+            <label for="subEmail" class="visually-hidden">Email address for newsletter</label>
             <input id="subEmail" name="email" type="email" placeholder="you@example.com" required
+                   aria-describedby="subMsg" 
                    style="flex: 1; background-color: white; color: #2E4057; border: none; padding: 10px 15px; border-radius: 4px; font-size: 1rem;">
             <button class="btn subscribe-btn" type="submit" 
+                    aria-describedby="subMsg"
                     style="background-color: #EE583F; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-size: 1rem; cursor: pointer;">
               Subscribe
             </button>
@@ -86,7 +97,7 @@
         </div>
       </div>
       <div style="color: white; min-width: 220px;">
-        <h2 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 8px; color: white;">Hours of Operation:</h2>
+        <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 8px; color: white;">Hours of Operation:</h3>
         <p style="color: white; margin: 0;">
           Monday–Friday: 9 a.m. to 8 p.m.<br>
           Saturday: 10 a.m. to 6 p.m.<br>

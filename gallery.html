@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Haven Bookstore - Gallery</title>
     <meta name="description" content="Browse our collection of books, magazines, and merchandise. Filter by category and add items to your cart for easy shopping.">
+    <meta name="theme-color" content="#2E4057">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
@@ -12,10 +16,15 @@
    <header class="top-nav" role="banner">
     <div class="header-container">
       <div class="brand">
-        <img src="assets/logo.png" alt="Book Haven Bookstore Logo" class="logo">
+        <img src="assets/logo.png" alt="Book Haven Bookstore Logo" class="logo" loading="eager">
         
       </div>
       <nav class="main-nav" role="navigation" aria-label="Primary">
+        <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
           <li><a href="gallery.html" aria-current="page">Gallery</a></li>
@@ -65,7 +74,7 @@
      <footer role="contentinfo" style="background-color: #2E4057; padding: 40px 20px; border-top: 1px solid #C7B65E; color: white;">
     <div class="footer-container" style="display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; gap: 20px;">
       <div style="display: flex; flex-direction: column; gap: 20px;">
-        <h2 class="footer-title" style="font-weight: 700; font-size: 1.5rem; color: white;">Stay Updated</h2>
+        <h3 class="footer-title" style="font-weight: 700; font-size: 1.5rem; color: white;">Stay Updated</h3>
         <div class="footer-subscribe" style="width: 100%; max-width: 400px;">
           <form id="subscribeForm" class="subscribe" novalidate style="display: flex; gap: 10px;">
             

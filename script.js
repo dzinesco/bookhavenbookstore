@@ -176,7 +176,7 @@
       const inCart = getCart().includes(i.id);
       return `
         <div class="tile" role="listitem">
-          <img src="${i.img}" alt="${i.title}">
+          <img src="${i.img}" alt="${i.title}" loading="lazy" width="320" height="160">
           <div class="meta">
             <span class="title">${i.title}</span>
             <button class="btn add" data-id="${i.id}" aria-pressed="${inCart}">
@@ -261,4 +261,43 @@
 
   updateCartCount();
   render();
+})();
+
+// Hamburger Menu Functionality
+(function hamburgerMenu() {
+  const hamburger = document.querySelector('.hamburger');
+  const navList = document.querySelector('.nav-list');
+  
+  if (hamburger && navList) {
+    hamburger.addEventListener('click', function() {
+      const isActive = navList.classList.contains('active');
+      
+      navList.classList.toggle('active');
+      hamburger.setAttribute('aria-expanded', !isActive);
+      
+      // Close menu when clicking outside
+      if (!isActive) {
+        document.addEventListener('click', closeMenuOnOutsideClick);
+      } else {
+        document.removeEventListener('click', closeMenuOnOutsideClick);
+      }
+    });
+    
+    function closeMenuOnOutsideClick(e) {
+      if (!hamburger.contains(e.target) && !navList.contains(e.target)) {
+        navList.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
+        document.removeEventListener('click', closeMenuOnOutsideClick);
+      }
+    }
+    
+    // Close menu when clicking on a nav link
+    navList.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navList.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
+        document.removeEventListener('click', closeMenuOnOutsideClick);
+      });
+    });
+  }
 })();
